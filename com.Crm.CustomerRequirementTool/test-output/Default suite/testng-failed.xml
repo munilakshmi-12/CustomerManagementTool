@@ -3,17 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="OrganizationModule.CreateOrganization">
+      <class name="organizationModule.DeleteOrganizationTest">
         <methods>
-          <include name="dataBaseConnection"/>
-          <include name="logoutFromApplication"/>
-          <include name="loginToApplication"/>
-          <include name="disconnectWithDataBase"/>
-          <include name="launchBrowser"/>
-          <include name="closeBrowser"/>
-          <include name="deleteOrg"/>
+          <include name="deleteOrganization"/>
         </methods>
-      </class> <!-- OrganizationModule.CreateOrganization -->
+      </class> <!-- organizationModule.DeleteOrganizationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

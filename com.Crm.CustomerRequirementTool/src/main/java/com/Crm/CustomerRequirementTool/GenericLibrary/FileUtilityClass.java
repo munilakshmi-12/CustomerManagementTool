@@ -28,11 +28,25 @@ public class FileUtilityClass {
 		return name;
 				
 }
+	public String readDataFromExcelForStringvalue2(String Sheetname, int row ,int cell) throws EncryptedDocumentException, IOException{
+		FileInputStream fis = new FileInputStream(IpathConstants.excelPath2);
+		Workbook wb = WorkbookFactory.create(fis);
+		String name = wb.getSheet(Sheetname).getRow(row).getCell(cell).getStringCellValue();
+		return name;
+				
+}
 	public double readDataFromExcelForNumericvalue(String Sheetname, int row ,int cell) throws EncryptedDocumentException, IOException{
 		FileInputStream fis = new FileInputStream(IpathConstants.excelPath);
 		Workbook wb = WorkbookFactory.create(fis);
 		double data = wb.getSheet(Sheetname).getRow(row).getCell(cell).getNumericCellValue();
 		return data;
 	}
+	public long readDataFromExcelForNumericvalue2(String Sheetname, int row ,int cell) throws EncryptedDocumentException, IOException{
+		FileInputStream fis = new FileInputStream(IpathConstants.excelPath2);
+		Workbook wb = WorkbookFactory.create(fis);
+		long data = (long)wb.getSheet(Sheetname).getRow(row).getCell(cell).getNumericCellValue();
+		return data;
+	}
+
 
 }

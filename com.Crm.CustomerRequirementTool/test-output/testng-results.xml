@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Database connected Successfully]]>
@@ -20,19 +20,19 @@
       <![CDATA[DataBase disconnected Successfully]]>
     </line>
   </reporter-output>
-  <suite started-at="2026-10-05T12:32:29 IST" name="Default suite" finished-at="2026-10-05T12:32:47 IST" duration-ms="17903">
+  <suite started-at="2026-10-09T13:09:54 IST" name="Default suite" finished-at="2026-10-09T13:10:34 IST" duration-ms="39554">
     <groups>
     </groups>
-    <test started-at="2026-10-05T12:32:29 IST" name="Default test" finished-at="2026-10-05T12:32:47 IST" duration-ms="17903">
-      <class name="OrganizationModule.CreateOrganization">
-        <test-method is-config="true" signature="dataBaseConnection()[pri:0, instance:OrganizationModule.CreateOrganization@1e178745]" started-at="2026-10-05T12:32:29 IST" name="dataBaseConnection" finished-at="2026-10-05T12:32:29 IST" duration-ms="20" status="PASS">
+    <test started-at="2026-10-09T13:09:54 IST" name="Default test" finished-at="2026-10-09T13:10:34 IST" duration-ms="39554">
+      <class name="leadsModule.CreateLeadTest">
+        <test-method is-config="true" signature="dataBaseConnection()[pri:0, instance:leadsModule.CreateLeadTest@1f59a598]" started-at="2026-10-09T13:09:54 IST" name="dataBaseConnection" finished-at="2026-10-09T13:09:54 IST" duration-ms="11" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Database connected Successfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- dataBaseConnection -->
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:OrganizationModule.CreateOrganization@1e178745]" started-at="2026-10-05T12:32:29 IST" name="launchBrowser" finished-at="2026-10-05T12:32:31 IST" duration-ms="2160" status="PASS">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:leadsModule.CreateLeadTest@1f59a598]" started-at="2026-10-09T13:09:54 IST" name="launchBrowser" finished-at="2026-10-09T13:09:57 IST" duration-ms="2361" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -46,39 +46,39 @@
             </line>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:OrganizationModule.CreateOrganization@1e178745]" started-at="2026-10-05T12:32:31 IST" name="loginToApplication" finished-at="2026-10-05T12:32:35 IST" duration-ms="3774" status="PASS">
+        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:leadsModule.CreateLeadTest@1f59a598]" started-at="2026-10-09T13:09:57 IST" name="loginToApplication" finished-at="2026-10-09T13:09:57 IST" duration-ms="233" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Logged in to CMT Application Successfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginToApplication -->
-        <test-method signature="deleteOrg()[pri:0, instance:OrganizationModule.CreateOrganization@1e178745]" started-at="2026-10-05T12:32:35 IST" name="deleteOrg" finished-at="2026-10-05T12:32:41 IST" duration-ms="5712" status="PASS">
+        <test-method signature="createLead()[pri:0, instance:leadsModule.CreateLeadTest@1f59a598]" started-at="2026-10-09T13:09:57 IST" name="createLead" finished-at="2026-10-09T13:10:31 IST" duration-ms="34449" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteOrg -->
-        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:OrganizationModule.CreateOrganization@1e178745]" started-at="2026-10-05T12:32:41 IST" name="logoutFromApplication" finished-at="2026-10-05T12:32:47 IST" duration-ms="5741" status="PASS">
+        </test-method> <!-- createLead -->
+        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:leadsModule.CreateLeadTest@1f59a598]" started-at="2026-10-09T13:10:31 IST" name="logoutFromApplication" finished-at="2026-10-09T13:10:34 IST" duration-ms="2126" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Logged out from CMT application Successfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- logoutFromApplication -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:OrganizationModule.CreateOrganization@1e178745]" started-at="2026-10-05T12:32:47 IST" name="closeBrowser" finished-at="2026-10-05T12:32:47 IST" duration-ms="461" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:leadsModule.CreateLeadTest@1f59a598]" started-at="2026-10-09T13:10:34 IST" name="closeBrowser" finished-at="2026-10-09T13:10:34 IST" duration-ms="320" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Closed the CMT application Successfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="disconnectWithDataBase()[pri:0, instance:OrganizationModule.CreateOrganization@1e178745]" started-at="2026-10-05T12:32:47 IST" name="disconnectWithDataBase" finished-at="2026-10-05T12:32:47 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="disconnectWithDataBase()[pri:0, instance:leadsModule.CreateLeadTest@1f59a598]" started-at="2026-10-09T13:10:34 IST" name="disconnectWithDataBase" finished-at="2026-10-09T13:10:34 IST" duration-ms="1" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[DataBase disconnected Successfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- disconnectWithDataBase -->
-      </class> <!-- OrganizationModule.CreateOrganization -->
+      </class> <!-- leadsModule.CreateLeadTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

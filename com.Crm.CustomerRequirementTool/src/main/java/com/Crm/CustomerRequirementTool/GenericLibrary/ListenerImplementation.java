@@ -17,14 +17,12 @@ public class ListenerImplementation extends BaseClass implements ITestListener {
 
 	@Override
 	public void onTestStart(ITestResult result) {
-		// TODO Auto-generated method stub
-		ITestListener.super.onTestStart(result);
+		
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		// TODO Auto-generated method stub
-		ITestListener.super.onTestSuccess(result);
+		
 	}
 
 	@Override
@@ -34,9 +32,9 @@ public class ListenerImplementation extends BaseClass implements ITestListener {
 		File src = t.getScreenshotAs(OutputType.FILE);
 		TimeUtility t1 = new TimeUtility();
 		String dateandtime = t1.getDateAndTme("dd-MM-yyyy hh-mm-ss");
-		File dest = new File("./ScreenShots" +name +" "+dateandtime+ ".png");		
+		File dest = new File("./ScreenShots/" + name +" "+dateandtime+ ".png");		
 		try {
-			Files.copy(src, dest);
+			Files.copy(src,dest);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -46,32 +44,27 @@ public class ListenerImplementation extends BaseClass implements ITestListener {
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
-		// TODO Auto-generated method stub
-		ITestListener.super.onTestSkipped(result);
+		
 	}
 
 	@Override
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-		// TODO Auto-generated method stub
-		ITestListener.super.onTestFailedButWithinSuccessPercentage(result);
+		
 	}
 
 	@Override
 	public void onTestFailedWithTimeout(ITestResult result) {
-		// TODO Auto-generated method stub
-		ITestListener.super.onTestFailedWithTimeout(result);
+		
 	}
 
 	@Override
 	public void onStart(ITestContext context) {
-		// TODO Auto-generated method stub
-		ITestListener.super.onStart(context);
+		
 	}
 
 	@Override
 	public void onFinish(ITestContext context) {
-		// TODO Auto-generated method stub
-		ITestListener.super.onFinish(context);
+		
 	}
 	
 	

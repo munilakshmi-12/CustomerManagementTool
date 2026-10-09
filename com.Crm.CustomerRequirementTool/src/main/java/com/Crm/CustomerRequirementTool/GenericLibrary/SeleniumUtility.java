@@ -47,6 +47,29 @@ public class SeleniumUtility {
 		Alert a = driver.switchTo().alert();
 		a.accept();
 	}
-	
+	public void selectFirstName(WebElement address,String text) {
+		Select s = new Select(address);
+		s.selectByVisibleText(text);
+	}
+	public void selectLeadSource(WebElement add,String text) {
+		Select s = new Select(add);
+		s.selectByVisibleText(text);
+	}
+	public void selectIndustry(WebElement add,String text) {
+		Select s = new Select(add);
+		s.selectByVisibleText(text);
+	}
+	public void selectLeadStatus(WebElement add,String text) {
+		Select s = new Select(add);
+		s.selectByVisibleText(text);
+	}
+	public void selectassignedToUser(WebElement add,String text) {
+		Select s = new Select(add);
+		s.selectByVisibleText(text);
+	}
+	public void selectassignedTogroup(WebElement add,String text) {
+		Select s = new Select(add);
+		s.selectByVisibleText(text);
+	}
 
 }
